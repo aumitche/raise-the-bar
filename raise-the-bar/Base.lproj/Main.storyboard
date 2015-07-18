@@ -129,7 +129,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="v6d-YA-oCa">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="P8P-LL-KYd"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="P8P-LL-KYd">
+                            <connections>
+                                <segue destination="VVp-PH-Dby" kind="show" identifier="musicSegue" id="vwu-Sh-h6x"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -140,6 +144,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqS-R2-o05" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1856" y="170"/>
+        </scene>
+        <!--And what music do you like?-->
+        <scene sceneID="Cmx-YG-1mc">
+            <objects>
+                <tableViewController id="4gw-pe-bsV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TOh-5S-rii">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mAV-5F-83z">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mAV-5F-83z" id="RQb-sZ-umi">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4gw-pe-bsV" id="cn6-lA-4vC"/>
+                            <outlet property="delegate" destination="4gw-pe-bsV" id="D8b-bX-GZs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="And what music do you like?" id="VeO-in-siJ"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6JU-qg-jPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3474" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7HN-VF-Kbh">
@@ -176,6 +209,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Glb-BZ-ts6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1237" y="170"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bex-2H-iU7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VVp-PH-Dby" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ogl-7Y-Uxn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4gw-pe-bsV" kind="relationship" relationship="rootViewController" id="vKh-zd-G0o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNp-hz-b3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2662" y="84"/>
         </scene>
     </scenes>
 </document>
