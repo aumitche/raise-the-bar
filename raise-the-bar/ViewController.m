@@ -38,6 +38,22 @@
 	lookingForLabel.font = [UIFont fontWithName:AVENIR size:fitStringToLabel(@"I'm looking for…", AVENIR, lookingForLabel)];
 }
 
+//This function was adapted from http://stackoverflow.com/a/10979215/4041237
+//- (int) getAge:(NSDate*)dateOfBirth
+int getAge(NSDate* dateOfBirth) {
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+	NSDateComponents *dateComponentsNow = [calendar components:unitFlags fromDate:[NSDate date]];
+	NSDateComponents *dateComponentsBirth = [calendar components:unitFlags fromDate:dateOfBirth];
+	
+	if (([dateComponentsNow month] < [dateComponentsBirth month]) ||
+		(([dateComponentsNow month] == [dateComponentsBirth month]) && ([dateComponentsNow day] < [dateComponentsBirth day]))) {
+		return (int) ([dateComponentsNow year] - [dateComponentsBirth year] - 1);
+	} else {
+		return (int) ([dateComponentsNow year] - [dateComponentsBirth year]);
+	}
+}
+
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	
@@ -50,10 +66,9 @@
 	if ([[segue identifier] isEqualToString:@"photoSegue"]) {
 		UINavigationController* pvcNav = (UINavigationController*) segue.destinationViewController;
 		PhotoViewController* pvc = (PhotoViewController*) pvcNav.topViewController;
-		NSLog(@"Name: %@ %@\n", firstNameTextField.text, lastNameTextField.text);
 		delegate.user.firstName = firstNameTextField.text;
 		delegate.user.lastName = lastNameTextField.text;
-		delegate.user.age = 19;
+		delegate.user.age = getAge(datePicker.date);
 		delegate.user.gender = (int) genderPicker.selectedSegmentIndex;
 		delegate.user.desiredGender = (int) desiredGenderPicker.selectedSegmentIndex;
 	}

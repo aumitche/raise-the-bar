@@ -8,7 +8,7 @@
 
 #import "PhotoViewController.h"
 
-@interface PhotoViewController () {
+@interface PhotoViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 	AppDelegate* delegate;
 }
 
@@ -20,17 +20,17 @@
     [super viewDidLoad];
 	
 	delegate = (AppDelegate*) [[UIApplication sharedApplication] delegate];
-	NSLog(@"%@\n%@\n%d\n%d\n%d\n", delegate.user.firstName, delegate.user.lastName, delegate.user.age, delegate.user.gender, delegate.user.desiredGender);
 	
 	UIImagePickerController* pickerLibrary = [[UIImagePickerController alloc] init];
 	pickerLibrary.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
 	pickerLibrary.delegate = self;
 	[self presentModalViewController:pickerLibrary animated:YES];
+ 
 }
 
-- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary*)editingInfo
-{
-	UIImage* myImage = image;
+- (void) imagePickerController:(UIImagePickerController*)picker didFinishPickingImage:(UIImage*)image editingInfo:(NSDictionary*)editingInfo {
+	delegate.profile = image;
+	[picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {

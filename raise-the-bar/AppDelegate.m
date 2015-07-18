@@ -15,6 +15,7 @@
 @implementation AppDelegate
 
 @synthesize user;
+@synthesize profile;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
@@ -24,6 +25,7 @@
 	user.age = 19;
 	user.gender = 0;
 	user.desiredGender = 1;
+	profile = [[UIImage alloc] init];
 	return YES;
 }
 

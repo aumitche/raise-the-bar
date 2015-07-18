@@ -176,18 +176,6 @@
 	[textField setFont:[UIFont fontWithName:AVENIR size:20]];
 	[view addSubview:textField];
 	
-	/*
-	 label = [[UILabel alloc] initWithFrame:CGRectMake(x,y,w,h)];
-	 label.tag = tag;
-	 label.textAlignment = NSTextAlignmentCenter;
-	 label.backgroundColor=[UIColor clearColor];
-	 label.text = text;
-	 label.textColor = [UIColor blackColor];
-	 [label setFont:[UIFont fontWithName:AVENIR size:textSize]];
-	 label.textAlignment = NSTextAlignmentLeft;
-	 [view addSubview:label];
-	 */
-	
 	return textField;
 }
 
