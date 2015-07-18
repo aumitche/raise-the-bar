@@ -14,6 +14,8 @@
 + (UILabel*) create_element_label :(NSString *)text :(CGFloat)textSize :(int)tag :(float)x :(float)y :(float)w :(float)h;
 + (UILabel*) create_z_label :(NSString*)text :(int)tag :(float)x :(float)y :(float)w :(float)h;
 + (void) animateButton :(UIButton*)button;
++ (UITextField*) createTextFieldInView: (UIView*)view hint:(NSString*)hint tag:(int)tag x:(float) x y:(float) y width:(float) width height:(float) height;
+
 CGFloat fitStringToLabel(NSString* string, NSString* fontName, UILabel* label);
 CGFloat fitStringToButton(NSString* string, NSString* fontName, UIButton* button);
 

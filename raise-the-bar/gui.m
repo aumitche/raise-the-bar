@@ -137,7 +137,6 @@
     label.text = text;
     label.textColor = [UIColor blackColor];
 	[label setFont:[UIFont fontWithName:AVENIR size:textSize]];
-	label.textAlignment = NSTextAlignmentLeft;
 	[view addSubview:label];
     return label;
 }
@@ -164,6 +163,32 @@
 //    label.textColor = ELEMENT_BUTTON_FONT_COLOR;
     label.font = [UIFont fontWithName:@"Roboto-Regular" size:SCALE*16];
     return label;
+}
+
++ (UITextField*) createTextFieldInView: (UIView*)view hint:(NSString*)hint tag:(int)tag x:(float) x y:(float) y width:(float) width height:(float) height {
+	UITextField* textField;
+	textField = [[UITextField alloc] initWithFrame:CGRectMake(x, y, width, height)];
+	textField.tag = tag;
+	textField.textAlignment = NSTextAlignmentLeft;
+	textField.backgroundColor = [UIColor whiteColor];
+	textField.text = hint;
+	textField.textColor = [UIColor blackColor];
+	[textField setFont:[UIFont fontWithName:AVENIR size:20]];
+	[view addSubview:textField];
+	
+	/*
+	 label = [[UILabel alloc] initWithFrame:CGRectMake(x,y,w,h)];
+	 label.tag = tag;
+	 label.textAlignment = NSTextAlignmentCenter;
+	 label.backgroundColor=[UIColor clearColor];
+	 label.text = text;
+	 label.textColor = [UIColor blackColor];
+	 [label setFont:[UIFont fontWithName:AVENIR size:textSize]];
+	 label.textAlignment = NSTextAlignmentLeft;
+	 [view addSubview:label];
+	 */
+	
+	return textField;
 }
 
 + (void) animateButton :(UIButton*)button {

@@ -21,8 +21,8 @@
 //Determine the scaling factor depending on the device that the app is running on
 #define FACTOR ([[UIScreen mainScreen] scale])
 
-#define SCREEN_HEIGHT (SCREEN_BOUNDS.size.width/FACTOR)
-#define SCREEN_WIDTH (SCREEN_BOUNDS.size.height/FACTOR)
+#define SCREEN_HEIGHT (SCREEN_BOUNDS.size.height/FACTOR)
+#define SCREEN_WIDTH (SCREEN_BOUNDS.size.width/FACTOR)
 
 #define REF_SCREEN_WIDTH 1024
 #define REF_SCREEN_HEIGHT 768

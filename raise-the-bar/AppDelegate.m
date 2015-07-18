@@ -14,9 +14,16 @@
 
 @implementation AppDelegate
 
+@synthesize user;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+	user = [[User alloc] init];
+	user.firstName = @"John";
+	user.lastName = @"Doe";
+	user.age = 19;
+	user.gender = 0;
+	user.desiredGender = 1;
 	return YES;
 }
 
