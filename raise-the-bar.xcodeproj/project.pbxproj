@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A26CA8581B5AC5EF0016B2E4 /* gui.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8571B5AC5EF0016B2E4 /* gui.m */; };
+		A26CA8591B5AC5EF0016B2E4 /* gui.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8571B5AC5EF0016B2E4 /* gui.m */; };
 		A285DE651B5ABFE8003FC0A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE641B5ABFE8003FC0A5 /* main.m */; };
 		A285DE681B5ABFE8003FC0A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE671B5ABFE8003FC0A5 /* AppDelegate.m */; };
 		A285DE6B1B5ABFE8003FC0A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE6A1B5ABFE8003FC0A5 /* ViewController.m */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A26CA8561B5AC5EF0016B2E4 /* gui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gui.h; sourceTree = "<group>"; };
+		A26CA8571B5AC5EF0016B2E4 /* gui.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gui.m; sourceTree = "<group>"; };
+		A26CA85A1B5AC61F0016B2E4 /* consts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = consts.h; sourceTree = "<group>"; };
 		A285DE5F1B5ABFE7003FC0A5 /* raise-the-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "raise-the-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A285DE631B5ABFE8003FC0A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A285DE641B5ABFE8003FC0A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,9 +88,12 @@
 			children = (
 				A285DE661B5ABFE8003FC0A5 /* AppDelegate.h */,
 				A285DE671B5ABFE8003FC0A5 /* AppDelegate.m */,
+				A26CA85A1B5AC61F0016B2E4 /* consts.h */,
+				A26CA8561B5AC5EF0016B2E4 /* gui.h */,
+				A26CA8571B5AC5EF0016B2E4 /* gui.m */,
+				A285DE6C1B5ABFE8003FC0A5 /* Main.storyboard */,
 				A285DE691B5ABFE8003FC0A5 /* ViewController.h */,
 				A285DE6A1B5ABFE8003FC0A5 /* ViewController.m */,
-				A285DE6C1B5ABFE8003FC0A5 /* Main.storyboard */,
 				A285DE6F1B5ABFE8003FC0A5 /* Images.xcassets */,
 				A285DE711B5ABFE8003FC0A5 /* LaunchScreen.xib */,
 				A285DE621B5ABFE8003FC0A5 /* Supporting Files */,
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A285DE6B1B5ABFE8003FC0A5 /* ViewController.m in Sources */,
+				A26CA8581B5AC5EF0016B2E4 /* gui.m in Sources */,
 				A285DE681B5ABFE8003FC0A5 /* AppDelegate.m in Sources */,
 				A285DE651B5ABFE8003FC0A5 /* main.m in Sources */,
 			);
@@ -230,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A285DE7F1B5ABFE8003FC0A5 /* raise_the_barTests.m in Sources */,
+				A26CA8591B5AC5EF0016B2E4 /* gui.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +426,7 @@
 				A285DE841B5ABFE8003FC0A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A285DE851B5ABFE8003FC0A5 /* Build configuration list for PBXNativeTarget "raise-the-barTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +435,7 @@
 				A285DE871B5ABFE8003FC0A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
