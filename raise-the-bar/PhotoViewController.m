@@ -16,6 +16,8 @@
 
 @implementation PhotoViewController
 
+@synthesize imageView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
@@ -31,6 +33,7 @@
 - (void) imagePickerController:(UIImagePickerController*)picker didFinishPickingImage:(UIImage*)image editingInfo:(NSDictionary*)editingInfo {
 	delegate.profile = image;
 	[picker dismissViewControllerAnimated:YES completion:NULL];
+	imageView.image = image;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -11,5 +11,6 @@
 #import "ViewController.h"
 
 @interface PhotoViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
