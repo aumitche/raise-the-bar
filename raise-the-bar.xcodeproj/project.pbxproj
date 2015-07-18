@@ -16,8 +16,7 @@
 		A26CA8621B5ADC2C0016B2E4 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8601B5ADC2C0016B2E4 /* PhotoViewController.m */; };
 		A26CA8651B5AF8B00016B2E4 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8641B5AF8B00016B2E4 /* Music.m */; };
 		A26CA8661B5AF8B00016B2E4 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8641B5AF8B00016B2E4 /* Music.m */; };
-		A26CA8691B5AF91D0016B2E4 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8681B5AF91D0016B2E4 /* MusicViewController.m */; };
-		A26CA86A1B5AF91D0016B2E4 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8681B5AF91D0016B2E4 /* MusicViewController.m */; };
+		A26CA86D1B5B06410016B2E4 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA86C1B5B06410016B2E4 /* MusicTableViewController.m */; };
 		A285DE651B5ABFE8003FC0A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE641B5ABFE8003FC0A5 /* main.m */; };
 		A285DE681B5ABFE8003FC0A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE671B5ABFE8003FC0A5 /* AppDelegate.m */; };
 		A285DE6B1B5ABFE8003FC0A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE6A1B5ABFE8003FC0A5 /* ViewController.m */; };
@@ -48,8 +47,8 @@
 		A26CA8601B5ADC2C0016B2E4 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		A26CA8631B5AF8B00016B2E4 /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Music.h; sourceTree = "<group>"; };
 		A26CA8641B5AF8B00016B2E4 /* Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Music.m; sourceTree = "<group>"; };
-		A26CA8671B5AF91D0016B2E4 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
-		A26CA8681B5AF91D0016B2E4 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		A26CA86B1B5B06410016B2E4 /* MusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewController.h; sourceTree = "<group>"; };
+		A26CA86C1B5B06410016B2E4 /* MusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewController.m; sourceTree = "<group>"; };
 		A285DE5F1B5ABFE7003FC0A5 /* raise-the-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "raise-the-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A285DE631B5ABFE8003FC0A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A285DE641B5ABFE8003FC0A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,8 +131,8 @@
 				A285DE6A1B5ABFE8003FC0A5 /* ViewController.m */,
 				A26CA85F1B5ADC2C0016B2E4 /* PhotoViewController.h */,
 				A26CA8601B5ADC2C0016B2E4 /* PhotoViewController.m */,
-				A26CA8671B5AF91D0016B2E4 /* MusicViewController.h */,
-				A26CA8681B5AF91D0016B2E4 /* MusicViewController.m */,
+				A26CA86B1B5B06410016B2E4 /* MusicTableViewController.h */,
+				A26CA86C1B5B06410016B2E4 /* MusicTableViewController.m */,
 				A285DE6F1B5ABFE8003FC0A5 /* Images.xcassets */,
 				A285DE711B5ABFE8003FC0A5 /* LaunchScreen.xib */,
 				A285DE621B5ABFE8003FC0A5 /* Supporting Files */,
@@ -310,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26CA8691B5AF91D0016B2E4 /* MusicViewController.m in Sources */,
+				A26CA86D1B5B06410016B2E4 /* MusicTableViewController.m in Sources */,
 				A26CA8651B5AF8B00016B2E4 /* Music.m in Sources */,
 				A26CA85D1B5ACDBB0016B2E4 /* User.m in Sources */,
 				A285DE6B1B5ABFE8003FC0A5 /* ViewController.m in Sources */,
@@ -325,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26CA86A1B5AF91D0016B2E4 /* MusicViewController.m in Sources */,
 				A285DE7F1B5ABFE8003FC0A5 /* raise_the_barTests.m in Sources */,
 				A26CA8661B5AF8B00016B2E4 /* Music.m in Sources */,
 				A26CA8621B5ADC2C0016B2E4 /* PhotoViewController.m in Sources */,
