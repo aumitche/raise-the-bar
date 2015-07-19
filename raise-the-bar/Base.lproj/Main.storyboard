@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E36b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7NZ-h9-KXD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Welcome-->
@@ -145,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="1856" y="170"/>
         </scene>
-        <!--And what music do you like?-->
+        <!--What music do you like?-->
         <scene sceneID="Cmx-YG-1mc">
             <objects>
                 <tableViewController id="4gw-pe-bsV" customClass="MusicTableViewController" sceneMemberID="viewController">
@@ -166,13 +167,209 @@
                             <outlet property="delegate" destination="4gw-pe-bsV" id="D8b-bX-GZs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="And what music do you like?" id="VeO-in-siJ"/>
+                    <navigationItem key="navigationItem" title="What music do you like?" id="VeO-in-siJ">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="T6A-D7-h3C">
+                            <connections>
+                                <segue destination="FIL-9W-8P4" kind="show" identifier="drinksSegue" id="Y0T-bB-TTy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6JU-qg-jPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3474" y="84"/>
+        </scene>
+        <!--And what are your favourite drinks?-->
+        <scene sceneID="e9q-9v-MIW">
+            <objects>
+                <viewController id="ocK-R1-qbH" customClass="DrinksViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qjx-vV-r3Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="lqp-9l-TWJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v0m-gE-Kh5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter up to four favourite drinks." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgz-Ba-ZWM">
+                                <rect key="frame" x="16" y="84" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iNe-7c-scr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="My favourite!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCS-Oe-14h">
+                                <rect key="frame" x="16" y="218" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xyP-9U-IW0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delicious!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-Hy-5a4">
+                                <rect key="frame" x="16" y="352" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vu3-h8-hFU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite drink № 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3s-WL-hw0">
+                                <rect key="frame" x="16" y="160" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HbD-ZV-Uef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite drink № 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkT-AS-rX9">
+                                <rect key="frame" x="16" y="294" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZA0-mq-m7g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite drink № 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc9-yr-kDA">
+                                <rect key="frame" x="16" y="428" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Frj-PK-IfT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="I love it!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wF-6d-lrK">
+                                <rect key="frame" x="16" y="486" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XPy-FY-nXP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favourite drink № 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zO-uG-02S">
+                                <rect key="frame" x="16" y="562" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ypf-s1-cNm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fantastic!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mj-Yl-LM1">
+                                <rect key="frame" x="16" y="620" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8on-4G-lsB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UHP-Hy-5a4" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="0cF-22-gv5"/>
+                            <constraint firstItem="YkT-AS-rX9" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="3iG-pA-CuQ"/>
+                            <constraint firstItem="UHP-Hy-5a4" firstAttribute="top" secondItem="YkT-AS-rX9" secondAttribute="bottom" constant="8" id="5Ob-Cn-bbr"/>
+                            <constraint firstItem="9zO-uG-02S" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="A3S-uZ-0bk"/>
+                            <constraint firstItem="wgz-Ba-ZWM" firstAttribute="top" secondItem="qjx-vV-r3Q" secondAttribute="bottom" constant="20" id="CtO-sy-F6o"/>
+                            <constraint firstItem="YkT-AS-rX9" firstAttribute="top" secondItem="jCS-Oe-14h" secondAttribute="bottom" constant="46" id="DtE-hd-p0K"/>
+                            <constraint firstItem="0wF-6d-lrK" firstAttribute="top" secondItem="Tc9-yr-kDA" secondAttribute="bottom" constant="8" id="FsJ-sd-q4h"/>
+                            <constraint firstItem="Tc9-yr-kDA" firstAttribute="top" secondItem="UHP-Hy-5a4" secondAttribute="bottom" constant="46" id="HiM-ar-MAh"/>
+                            <constraint firstItem="Tc9-yr-kDA" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="IlH-v6-tm4"/>
+                            <constraint firstItem="wgz-Ba-ZWM" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="JVz-bQ-qYp"/>
+                            <constraint firstItem="8mj-Yl-LM1" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="OHj-MJ-6RE"/>
+                            <constraint firstItem="jCS-Oe-14h" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="OIE-mP-bkj"/>
+                            <constraint firstItem="9zO-uG-02S" firstAttribute="top" secondItem="0wF-6d-lrK" secondAttribute="bottom" constant="46" id="R68-Nx-RTH"/>
+                            <constraint firstItem="UHP-Hy-5a4" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="T5M-bQ-4Y2"/>
+                            <constraint firstItem="YkT-AS-rX9" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="WT5-0J-tQo"/>
+                            <constraint firstItem="8mj-Yl-LM1" firstAttribute="top" secondItem="9zO-uG-02S" secondAttribute="bottom" constant="8" id="aI6-vl-3RN"/>
+                            <constraint firstItem="jCS-Oe-14h" firstAttribute="top" secondItem="h3s-WL-hw0" secondAttribute="bottom" constant="8" id="aPg-OH-pHx"/>
+                            <constraint firstItem="0wF-6d-lrK" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="cOP-On-77r"/>
+                            <constraint firstItem="0wF-6d-lrK" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="hZr-jd-sEA"/>
+                            <constraint firstItem="h3s-WL-hw0" firstAttribute="top" secondItem="wgz-Ba-ZWM" secondAttribute="bottom" constant="46" id="mON-OT-Kwy"/>
+                            <constraint firstItem="wgz-Ba-ZWM" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="n0Y-6D-R7Y"/>
+                            <constraint firstItem="h3s-WL-hw0" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="n8h-OX-eep"/>
+                            <constraint firstItem="9zO-uG-02S" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="nSj-hM-gVm"/>
+                            <constraint firstItem="8mj-Yl-LM1" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="psH-DH-O26"/>
+                            <constraint firstItem="Tc9-yr-kDA" firstAttribute="leading" secondItem="v0m-gE-Kh5" secondAttribute="leadingMargin" id="qsE-HW-vnS"/>
+                            <constraint firstItem="h3s-WL-hw0" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="s2s-70-EKO"/>
+                            <constraint firstItem="jCS-Oe-14h" firstAttribute="trailing" secondItem="v0m-gE-Kh5" secondAttribute="trailingMargin" id="yOG-6E-vc3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="And what are your favourite drinks?" id="ZDb-Gy-nOT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="iQK-YA-PPN">
+                            <connections>
+                                <segue destination="eo2-Xd-Tkg" kind="show" id="Qv5-8R-X4K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="drink1Label" destination="h3s-WL-hw0" id="i2Z-7A-AVg"/>
+                        <outlet property="drink2Label" destination="YkT-AS-rX9" id="htd-N5-jC8"/>
+                        <outlet property="drink3Label" destination="Tc9-yr-kDA" id="B6b-zq-ILB"/>
+                        <outlet property="drink4Label" destination="9zO-uG-02S" id="v93-DB-Ylb"/>
+                        <outlet property="infoLabel" destination="wgz-Ba-ZWM" id="1Zh-Gd-zu8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qwb-bf-oo0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4686" y="84"/>
+        </scene>
+        <!--Drinks Menu-->
+        <scene sceneID="6Uh-E7-eLK">
+            <objects>
+                <viewController id="fZC-dk-mEh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="blx-vB-1dp"/>
+                        <viewControllerLayoutGuide type="bottom" id="F5V-lT-bnI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ey-SN-ib2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Drinks Menu" id="hD2-EN-SJy">
+                        <barButtonItem key="rightBarButtonItem" title="Pay Up, Bitch" id="SCp-6T-27E">
+                            <connections>
+                                <segue destination="Oqk-Xb-el5" kind="show" id="KqB-K5-xsa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzj-DD-2XG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5966" y="138"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="bEs-jb-vAY">
+            <objects>
+                <viewController id="9b6-Cl-weB" customClass="PaymentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jn1-mY-zZx"/>
+                        <viewControllerLayoutGuide type="bottom" id="rme-A8-EQp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Igh-Rp-zSt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qSK-ve-wOF"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glA-uy-f8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7479" y="114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7HN-VF-Kbh">
@@ -227,6 +424,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNp-hz-b3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2662" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Tm-mG-eAJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FIL-9W-8P4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4JO-9h-qmd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ocK-R1-qbH" kind="relationship" relationship="rootViewController" id="8yQ-Ww-Ztn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CrK-kQ-sH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4134" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K4g-Eg-kPy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oqk-Xb-el5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dc0-mq-A8P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9b6-Cl-weB" kind="relationship" relationship="rootViewController" id="V2p-wx-rbo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8TG-2A-hap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6667" y="114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DB5-Xz-8Bd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eo2-Xd-Tkg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nCo-qR-mjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fZC-dk-mEh" kind="relationship" relationship="rootViewController" id="pGT-7H-xhF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKp-oU-5wx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5362" y="138"/>
         </scene>
     </scenes>
 </document>

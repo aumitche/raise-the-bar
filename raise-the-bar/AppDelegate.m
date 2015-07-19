@@ -26,6 +26,8 @@
 	user.gender = 0;
 	user.desiredGender = 1;
 	profile = [[UIImage alloc] init];
+	
+	[Braintree setReturnURLScheme:@"ca.mitchellau.raise-the-bar.payments"];
 	return YES;
 }
 
@@ -49,6 +51,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+//This method is taken from Braintree.
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+	return [Braintree handleOpenURL:url sourceApplication:sourceApplication];
 }
 
 @end

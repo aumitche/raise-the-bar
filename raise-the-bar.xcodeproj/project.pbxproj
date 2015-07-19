@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65D451C05EB84323D86DA996 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC79B9DA54A5ED85A6F43F21 /* libPods.a */; };
 		A26CA8581B5AC5EF0016B2E4 /* gui.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8571B5AC5EF0016B2E4 /* gui.m */; };
 		A26CA8591B5AC5EF0016B2E4 /* gui.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8571B5AC5EF0016B2E4 /* gui.m */; };
 		A26CA85D1B5ACDBB0016B2E4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA85C1B5ACDBB0016B2E4 /* User.m */; };
@@ -17,6 +16,14 @@
 		A26CA8651B5AF8B00016B2E4 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8641B5AF8B00016B2E4 /* Music.m */; };
 		A26CA8661B5AF8B00016B2E4 /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8641B5AF8B00016B2E4 /* Music.m */; };
 		A26CA86D1B5B06410016B2E4 /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA86C1B5B06410016B2E4 /* MusicTableViewController.m */; };
+		A26CA8711B5B26C50016B2E4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A26CA8701B5B26C50016B2E4 /* libPods.a */; };
+		A26CA8731B5B26CB0016B2E4 /* libPods-Braintree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A26CA8721B5B26CB0016B2E4 /* libPods-Braintree.a */; };
+		A26CA8791B5B2AC40016B2E4 /* DrinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8781B5B2AC40016B2E4 /* DrinksViewController.m */; };
+		A26CA87A1B5B2AC40016B2E4 /* DrinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8781B5B2AC40016B2E4 /* DrinksViewController.m */; };
+		A26CA87D1B5B3ADB0016B2E4 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA87C1B5B3ADB0016B2E4 /* PaymentViewController.m */; };
+		A26CA87E1B5B3ADB0016B2E4 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA87C1B5B3ADB0016B2E4 /* PaymentViewController.m */; };
+		A26CA8811B5B44590016B2E4 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8801B5B44590016B2E4 /* Drink.m */; };
+		A26CA8821B5B44590016B2E4 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA8801B5B44590016B2E4 /* Drink.m */; };
 		A285DE651B5ABFE8003FC0A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE641B5ABFE8003FC0A5 /* main.m */; };
 		A285DE681B5ABFE8003FC0A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE671B5ABFE8003FC0A5 /* AppDelegate.m */; };
 		A285DE6B1B5ABFE8003FC0A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A285DE6A1B5ABFE8003FC0A5 /* ViewController.m */; };
@@ -49,6 +56,15 @@
 		A26CA8641B5AF8B00016B2E4 /* Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Music.m; sourceTree = "<group>"; };
 		A26CA86B1B5B06410016B2E4 /* MusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewController.h; sourceTree = "<group>"; };
 		A26CA86C1B5B06410016B2E4 /* MusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewController.m; sourceTree = "<group>"; };
+		A26CA86E1B5B26300016B2E4 /* libPods-Braintree.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Braintree.a"; path = "Pods/../build/Debug-iphoneos/libPods-Braintree.a"; sourceTree = "<group>"; };
+		A26CA8701B5B26C50016B2E4 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		A26CA8721B5B26CB0016B2E4 /* libPods-Braintree.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Braintree.a"; path = "Pods/../build/Debug-iphoneos/libPods-Braintree.a"; sourceTree = "<group>"; };
+		A26CA8771B5B2AC40016B2E4 /* DrinksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksViewController.h; sourceTree = "<group>"; };
+		A26CA8781B5B2AC40016B2E4 /* DrinksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksViewController.m; sourceTree = "<group>"; };
+		A26CA87B1B5B3ADB0016B2E4 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		A26CA87C1B5B3ADB0016B2E4 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		A26CA87F1B5B44590016B2E4 /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		A26CA8801B5B44590016B2E4 /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
 		A285DE5F1B5ABFE7003FC0A5 /* raise-the-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "raise-the-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A285DE631B5ABFE8003FC0A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A285DE641B5ABFE8003FC0A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,7 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D451C05EB84323D86DA996 /* libPods.a in Frameworks */,
+				A26CA8731B5B26CB0016B2E4 /* libPods-Braintree.a in Frameworks */,
+				A26CA8711B5B26C50016B2E4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +105,6 @@
 		396EE57915376FCC014A834C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D5A59FAFF14E73A45CB0F94D /* Pods.debug.xcconfig */,
-				487B9224C109FE2240D38C61 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -102,6 +117,8 @@
 				A285DE601B5ABFE7003FC0A5 /* Products */,
 				396EE57915376FCC014A834C /* Pods */,
 				DF1AD0B8BC13BFA3EC1163BD /* Frameworks */,
+				D5A59FAFF14E73A45CB0F94D /* Pods.debug.xcconfig */,
+				487B9224C109FE2240D38C61 /* Pods.release.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +139,8 @@
 				A26CA85A1B5AC61F0016B2E4 /* consts.h */,
 				A26CA8561B5AC5EF0016B2E4 /* gui.h */,
 				A26CA8571B5AC5EF0016B2E4 /* gui.m */,
+				A26CA87F1B5B44590016B2E4 /* Drink.h */,
+				A26CA8801B5B44590016B2E4 /* Drink.m */,
 				A26CA8631B5AF8B00016B2E4 /* Music.h */,
 				A26CA8641B5AF8B00016B2E4 /* Music.m */,
 				A26CA85B1B5ACDBB0016B2E4 /* User.h */,
@@ -133,6 +152,10 @@
 				A26CA8601B5ADC2C0016B2E4 /* PhotoViewController.m */,
 				A26CA86B1B5B06410016B2E4 /* MusicTableViewController.h */,
 				A26CA86C1B5B06410016B2E4 /* MusicTableViewController.m */,
+				A26CA8771B5B2AC40016B2E4 /* DrinksViewController.h */,
+				A26CA8781B5B2AC40016B2E4 /* DrinksViewController.m */,
+				A26CA87B1B5B3ADB0016B2E4 /* PaymentViewController.h */,
+				A26CA87C1B5B3ADB0016B2E4 /* PaymentViewController.m */,
 				A285DE6F1B5ABFE8003FC0A5 /* Images.xcassets */,
 				A285DE711B5ABFE8003FC0A5 /* LaunchScreen.xib */,
 				A285DE621B5ABFE8003FC0A5 /* Supporting Files */,
@@ -169,6 +192,9 @@
 		DF1AD0B8BC13BFA3EC1163BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A26CA8721B5B26CB0016B2E4 /* libPods-Braintree.a */,
+				A26CA8701B5B26C50016B2E4 /* libPods.a */,
+				A26CA86E1B5B26300016B2E4 /* libPods-Braintree.a */,
 				CC79B9DA54A5ED85A6F43F21 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -311,9 +337,12 @@
 			files = (
 				A26CA86D1B5B06410016B2E4 /* MusicTableViewController.m in Sources */,
 				A26CA8651B5AF8B00016B2E4 /* Music.m in Sources */,
+				A26CA8811B5B44590016B2E4 /* Drink.m in Sources */,
 				A26CA85D1B5ACDBB0016B2E4 /* User.m in Sources */,
+				A26CA87D1B5B3ADB0016B2E4 /* PaymentViewController.m in Sources */,
 				A285DE6B1B5ABFE8003FC0A5 /* ViewController.m in Sources */,
 				A26CA8581B5AC5EF0016B2E4 /* gui.m in Sources */,
+				A26CA8791B5B2AC40016B2E4 /* DrinksViewController.m in Sources */,
 				A26CA8611B5ADC2C0016B2E4 /* PhotoViewController.m in Sources */,
 				A285DE681B5ABFE8003FC0A5 /* AppDelegate.m in Sources */,
 				A285DE651B5ABFE8003FC0A5 /* main.m in Sources */,
@@ -326,9 +355,12 @@
 			files = (
 				A285DE7F1B5ABFE8003FC0A5 /* raise_the_barTests.m in Sources */,
 				A26CA8661B5AF8B00016B2E4 /* Music.m in Sources */,
+				A26CA8821B5B44590016B2E4 /* Drink.m in Sources */,
 				A26CA8621B5ADC2C0016B2E4 /* PhotoViewController.m in Sources */,
 				A26CA8591B5AC5EF0016B2E4 /* gui.m in Sources */,
 				A26CA85E1B5ACDBB0016B2E4 /* User.m in Sources */,
+				A26CA87E1B5B3ADB0016B2E4 /* PaymentViewController.m in Sources */,
+				A26CA87A1B5B2AC40016B2E4 /* DrinksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +481,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "raise-the-bar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\"/**";
 			};
 			name = Debug;
 		};
@@ -460,12 +497,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "raise-the-bar/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\"/**";
 			};
 			name = Release;
 		};
 		A285DE861B5ABFE8003FC0A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A59FAFF14E73A45CB0F94D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -485,6 +528,7 @@
 		};
 		A285DE871B5ABFE8003FC0A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487B9224C109FE2240D38C61 /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

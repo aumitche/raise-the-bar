@@ -17,5 +17,6 @@
 @property int gender;					//Gender. 0 = male, 1 = female
 @property int desiredGender;			//0 = male, 1 = female, 2 = both
 @property NSMutableArray* music;		//An array of bools for different genres
+@property NSString* drink;				//The user's favourite drink
 
 @end

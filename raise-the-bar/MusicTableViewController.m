@@ -8,7 +8,9 @@
 
 #import "MusicTableViewController.h"
 
-@interface MusicTableViewController ()
+@interface MusicTableViewController () {
+	AppDelegate* delegate;
+}
 
 @end
 
@@ -24,6 +26,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	delegate = (AppDelegate*) [[UIApplication sharedApplication] delegate];
 	
 	genres = [[NSMutableArray alloc] init];
 	
@@ -78,7 +81,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return genres.count;
 }
@@ -88,6 +90,12 @@
     
 	Music* genre = [genres objectAtIndex:indexPath.row];
 	cell.textLabel.text = genre.genre;
+	
+	if (genre.like) {
+		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+	} else {
+		cell.accessoryType = UITableViewCellAccessoryNone;
+	}
 	
     return cell;
 }
@@ -126,14 +134,23 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	delegate.user.music = [genres copy];
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[tableView deselectRowAtIndexPath:indexPath animated:NO]; //If a cell is touched don't actually select it
+	Music *genreSelected = [self.genres objectAtIndex:indexPath.row];
+	genreSelected.like = !genreSelected.like;
+	[tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+	
+}
 
 @end
